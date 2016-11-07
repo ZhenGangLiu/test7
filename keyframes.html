@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            background-color: #000;
+        }
+        .yuzhou{
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+            position: relative;
+        }
+        .sun{
+            width: 90px;
+            height: 90px;
+            background-color: orange;
+            border-radius: 50%;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -45px;
+            margin-top: -45px;
+        }
+        .jin{
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -80px;
+            margin-top: -80px;
+            animation: rot 7.5s linear infinite;
+        }
+        .jin::before{
+            content: "";
+            width: 26px;
+            height: 26px;
+            background-color: #daa520;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            margin-left: -13px;
+            margin-top: -13px;
+            border-radius: 50%;
+        }
+
+
+        .mu{
+            width: 220px;
+            height: 220px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -110px;
+            margin-top: -110px;
+            animation: rot 7s 1s linear infinite ;
+        }
+        .mu::before{
+            content: "";
+            width: 18px;
+            height: 18px;
+            background-color: #666;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            margin-left: -9px;
+            margin-top: -9px;
+            border-radius: 50%;
+
+        }
+
+        .earth{
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -150px;
+            margin-top: -150px;
+            animation: rot 8.5s 2s linear infinite ;
+        }
+        .earth::before{
+            content: "";
+            width: 30px;
+            height: 30px;
+            background-color: blue;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            margin-left: -15px;
+            margin-top: -15px;
+            border-radius: 50%;
+
+        }
+        .moon{
+            width: 48px;
+            height: 48px;
+            /*border: 1px dashed red;*/
+            border-radius: 50%;
+            position: absolute;
+            left: 0;
+            top:50%;
+            margin-top: -24px;
+            margin-left: -24px;
+            animation: rot 2s linear infinite
+        }
+        .moon::before{
+
+            content: "";
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            margin-left: -6px;
+            margin-top: -6px;
+            border-radius: 50%;
+        }
+
+        .shui{
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -200px;
+            margin-top: -200px;
+            animation: rot 9s 3s linear infinite ;
+        }
+        .shui::before{
+            content: "";
+            width: 24px;
+            height: 24px;
+            background-color: darkolivegreen;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            margin-left: -12px;
+            margin-top: -12px;
+            border-radius: 50%;
+
+        }
+
+
+        .huo{
+            width: 560px;
+            height: 560px;
+            border-radius: 50%;
+            border: 1px solid #999;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            margin-left: -280px;
+            margin-top: -280px;
+            animation: rot 8s 1s linear infinite ;
+        }
+        .huo::before{
+            content: "";
+            width: 28px;
+            height: 28px;
+            background-color: red;
+            position: absolute;
+            left: 0%;
+            top: 50%;
+            margin-left: -14px;
+            margin-top: -14px;
+            border-radius: 50%;
+
+        }
+
+        @keyframes rot {
+            0%{
+
+            }
+
+            100%{
+                transform:rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="yuzhou">
+    
+<div class="sun"></div>
+    <div class="jin"></div>
+    <div class="mu"></div>
+    <div class="earth">
+        <div class="moon"></div>
+    </div>
+    <div class="shui"></div>
+    <div class="huo"></div>
+</div>
+</body>
+</html>
